@@ -335,12 +335,6 @@ def main():
     csv_path = os.path.join(logs_dir, "plate_log.csv")
     pd.DataFrame(log_rows).to_csv(csv_path, index=False)
 
-    print("Frames actually read:", frame_idx, flush=True)
-    print("Chunks:", chunks_dir, flush=True)
-    print("Plates:", plates_dir, flush=True)
-    print("Log:", csv_path, flush=True)
-
-
 if __name__ == "__main__":
     main()
 
